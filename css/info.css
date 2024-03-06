@@ -1,0 +1,1260 @@
+@import "reset.css";
+@import "common.css";
+@import "header.css";
+@import "headermenu.css";
+@import "footer.css";
+@import "info_sub.css";
+
+main{
+    width: calc(100% - 200px);
+    margin:0 auto;
+    position: relative;
+    top: 100px;
+    z-index: 10;
+}
+
+.top #info{
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.top #info .left{
+    width: 50%;
+    padding: 3%;
+    padding-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top #info .left .mainimg{
+    max-width: 550px;
+    width:100%;
+    height:550px;
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top #info .left .mainimg figure{
+    width: 90%;
+    position: absolute;
+    opacity: 0;
+}
+
+
+.top #info .left .mainimg .m1{
+    opacity: 1;
+}
+
+.top #info .left .imgbox{
+    width: 550px;
+    display: flex;
+}
+.top #info .left .imgbox li{
+    margin-right: 10px;
+    cursor: pointer;
+}
+.top #info .left .imgbox figure img{
+    max-width: 100px;
+}
+
+
+
+.top #info .right{
+    width: 50%;
+    padding: 3%;
+    padding-bottom: 2%;
+}
+
+.top #info .right .title{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.top #info .right .title p{
+    color:#6b6b6b;
+    font-weight: 500;
+    margin-left: 1%;
+    margin-bottom: 5px;
+}
+.top #info .right .title h3{
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 160%;
+    margin-left: 1%;
+}
+.top #info .right span{
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #999;
+    margin: 20px 0;
+}
+.top #info .right .title .star{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 10px;
+}
+.top #info .right .title .star figure{
+    margin-right:4px;
+    margin-bottom: 6px;
+}
+
+.top #info .right .title .star figure img{
+    width: 15px;
+}
+
+.top #info .right .title .star p{
+    color:#6b6b6b;
+}
+
+
+.top #info .right .con .con1{
+    line-height: 180%;
+    margin-bottom: 20px;
+}
+
+.top #info .right .con ul{
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.top #info .right .con ul li{
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.top #info .right .con .price{
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+}
+
+.top #info .right .con .price .dis{
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    font-weight: 800;
+}
+.top #info .right .con .price .dis p:last-child{
+    margin-top: 5px;
+    color:#bababa;
+    text-decoration: line-through;
+}
+
+.top #info .right .con .price>p{
+    font-size: 2rem;
+    color:#A70000;
+    font-weight: 800;
+}
+
+.top #info .right .pur .total{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.top #info .right .pur .box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.top #info .right .pur .vol{
+    width: 23%;
+    height: 50px;
+    border:1px solid #999;
+    padding: 0 2%;
+} 
+.top #info .right .pur .vol ul{
+    display: flex;
+    justify-content: space-between;
+    line-height: 50px;
+    font-size: 1.25rem;
+}
+
+.top #info .right .pur .vol ul li{
+    cursor: pointer;
+}
+
+.top #info .right .pur .vol ul .result{
+    cursor:auto;
+}
+
+
+
+.top #info .right .pur .addcart{
+    width: 65%;
+    height: 50px;
+    border: 1px solid #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.top #info .right .pur .heart{
+    position: relative;
+    width: 10%;
+    height: 50px;
+    border: 1px solid #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.top #info .right .pur .heart figure{
+    position: absolute;
+}
+
+.top #info .right .pur .heart .heart2{
+    opacity: 0;
+}
+
+.top #info .right .pur .heart figure img{
+   max-width: 20px;
+}
+
+
+.top #info .right .pur .note{
+    margin: 20px 0;
+    height: 20px;
+    overflow: hidden;
+}
+
+.top #info .right .pur .note ul{
+    color:#A70000;
+    height: 20px;
+    position: relative;
+}
+
+.top #info .right .pur .note ul li{
+    height: 20px;
+    line-height: 160%;
+}
+
+
+
+
+
+
+/* 랭킹, 디테일 정보 */
+.top #rank{
+    width: 100%;
+    height: 200px;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    padding: 0 1%;
+    display: flex;
+    justify-content: space-between;
+    line-height: 22px;
+    font-size: 0.75rem;
+}
+
+.top #rank .left{
+    width: 50%;
+    padding: 1% 0;
+}
+
+.top #rank .left ul li>a{
+    display: inline;
+}
+
+.top #rank .left ul li{
+    font-weight: 600;
+}
+
+.top #rank .left ul li a{
+    color:#007A95;
+}
+
+.top #rank .right{
+    border-left: 1px solid #999;
+    width: 50%;
+    padding: 1% 2%;
+}
+
+.top #rank .right ul li span{
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+
+
+/* review 요약 preview */
+.top #pre{
+    width: 100%;
+    height: 230px;
+    border-bottom: 1px solid #999;
+    padding: 1% 3%;
+    margin-bottom: 100px;
+}
+
+.top #pre .head{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+.top #pre .btm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top #pre .btm .scope{
+    width: 15%;
+    text-align: center;
+    margin: 0 20px;
+}
+.top #pre .btm .scope h3{
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin: 10px 0;
+}
+
+.top #pre .btm .scope .star{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.top #pre .btm .scope .star figure{
+    margin-right: 5px;
+}
+.top #pre .btm .scope p{
+    font-size: 0.9rem;
+}
+
+
+.top #pre .btm .rev{
+    margin:0 auto;
+    width: 83%;
+    height: 158px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top #pre .btm .rev .btn{
+    cursor: pointer;
+}
+
+.top #pre .btm .revwarp{
+    width: 83%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+}
+
+.top #pre .btm .rev_con{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+}
+
+.top #pre .btm .rev .rev_con .revbox{
+    width: 100%;
+    padding:0 5%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex: 0 0 auto;
+    align-items: center;
+}
+
+
+.top #pre .btm .rev .rev_con .revbox figure img{
+    max-width: 140px;
+}
+
+.top #pre .btm .rev .rev_con .revbox p{
+    width: 70%;
+    height: 85%;
+    font-size: 0.75rem;
+    line-height: 170%;
+}
+
+
+
+
+
+.bottom{
+    width: 100%;
+    height: 1300px;
+    position: relative;
+}
+
+.bottom #button{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #999;
+    font-weight: 600;
+    color:#bababa;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.bottom #button div:first-child{
+    color:#333;
+}
+
+.bottom #button div{
+    width: 33%;
+    text-align: center;
+}
+
+.bottom #content{
+    padding: 2% 5%;
+    position: relative;
+}
+
+.bottom #content>div{
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+
+.bottom #content .con1{
+    width: 100%;
+    line-height: 170%;
+}
+
+.bottom #content .con1 ul li{
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.bottom #content .con1 h3{
+    font-size: 1.12rem;
+    margin-bottom: 10px ;
+}
+.bottom #content .con1 .info{
+    margin-bottom: 50px;
+}
+.bottom #content .con1>a{
+    font-weight: 600;
+    color:#007A95;
+}
+
+
+
+
+
+
+
+
+
+
+/* 노트북 & 테블릿 가로 (해상도 1024px ~ 1200px)*/ 
+@media all and (min-width:1024px) and (max-width:1200px) { 
+   
+    main{
+        width: calc(100% - 100px);
+        margin:0 auto;
+        position: relative;
+        top: 100px;
+        z-index: 10;
+    }
+    .top #info .left .mainimg{
+        max-width: 400px;
+        width:100%;
+        height:500px;
+        background-color: #fff;
+        position: relative;
+        margin: 50px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .top #info .left .imgbox{
+        width:400px;
+        display: flex;
+    }
+
+    .top #info .left .imgbox figure img{
+        max-width: 90px;
+    }
+
+    
+    .top #info .right .title p{
+        color:#6b6b6b;
+        font-weight: 500;
+        margin-left: 1%;
+        margin-bottom: 5px;
+        font-size: 0.9rem;
+    }
+    .top #info .right .title{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .top #info .right .title h3{
+        font-weight: 700;
+        font-size: 1.1rem;
+        line-height: 160%;
+        margin-left: 1%;
+    }
+    .top #info .right span{
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #999;
+        margin: 15px 0;
+    }
+    .top #info .right .title .star figure img{
+        width: 12px;
+    }
+    .top #info .right .title .star figure{
+        margin-right:4px;
+        margin-bottom: 5px;
+    }
+    .top #info .right .title .star p{
+        color:#6b6b6b;
+        font-size: 0.9rem;
+    }
+    .top #info .right .con .con1{
+        line-height: 180%;
+        margin-bottom: 20px;
+        font-size: 0.9rem;
+    }
+    .top #info .right .con ul li{
+        list-style: disc;
+        margin-left: 5px;
+        margin-bottom: 10px;
+        font-size: 0.85rem;
+    }
+    .top #info .right .con .price>p{
+        font-size: 2rem;
+        color:#A70000;
+        font-weight: 800;
+    }
+
+    .top #pre .btm .revwarp{
+        width: 88%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        overflow: hidden;
+    }
+    .bottom #content .con1{
+        width: 100%;
+        line-height: 170%;
+        font-size: 0.9rem;
+    }
+    .bottom #content .con1 h3{
+        font-size: 1rem;
+        margin-bottom: 10px ;
+    }
+
+   
+    
+} 
+
+/* 테블릿 세로 (해상도 768px ~ 1023px)*/ 
+@media all and (min-width:768px) and (max-width:1023px) { 
+    main{
+        width: calc(100% - 100px);
+        margin:0 auto;
+        position: relative;
+        top: 100px;
+        z-index: 10;
+    }
+    .top #info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    
+    .top #info .left{
+        width: 100%;
+        padding: 0;
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .top #info .left .mainimg{
+        max-width: 400px;
+        width:100%;
+        height:400px;
+        background-color: #fff;
+        position: relative;
+        margin: 50px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .top #info .left .imgbox{
+        width:400px;
+        display: flex;
+    }
+    .top #info .left .imgbox figure img{
+        max-width: 90px;
+    }
+
+    
+
+    .top #info .right{
+        width: 100%;
+        padding: 20px;
+        padding-bottom: 2%;
+    }
+    .top #info .right .title p{
+        color:#6b6b6b;
+        font-weight: 500;
+        margin-left: 1%;
+        margin-bottom: 5px;
+        font-size: 0.9rem;
+    }
+    .top #info .right .title{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .top #info .right .title h3{
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 160%;
+        margin-left: 1%;
+    }
+    .top #info .right span{
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #999;
+        margin: 10px 0;
+    }
+    .top #info .right .title .star figure img{
+        width: 12px;
+    }
+    .top #info .right .title .star figure{
+        margin-right:4px;
+        margin-bottom: 6px;
+    }
+    .top #info .right .title .star p{
+        color:#6b6b6b;
+        font-size: 0.9rem;
+    }
+    .top #info .right .con .con1{
+        line-height: 180%;
+        margin-bottom: 20px;
+        font-size: 0.9rem;
+    }
+    .top #info .right .con ul li{
+        list-style: disc;
+        margin-left: 5px;
+        margin-bottom: 8px;
+        font-size: 0.8rem;
+    }
+    .top #info .right .con .price>p{
+        font-size: 1.8rem;
+        color:#A70000;
+        font-weight: 800;
+    }
+    .top #info .right .pur .total{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+    }
+    .top #info .right .pur .box{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        font-size: 1rem;
+    }
+    .top #info .right .pur .vol{
+        width: 27%;
+        height: 50px;
+        border:1px solid #999;
+        padding: 0 2%;
+    } 
+    .top #info .right .pur .vol ul{
+        display: flex;
+        justify-content: space-between;
+        line-height: 50px;
+        font-size: 1rem;
+    }
+    .top #info .right .pur .addcart{
+        width: 55%;
+        height: 50px;
+        border: 1px solid #999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .top #info .right .pur .heart{
+        position: relative;
+        width: 16%;
+        height: 50px;
+        border: 1px solid #999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .top #info .right .pur .heart figure img{
+        max-width: 20px;
+    }
+     .top #info .right .pur .note ul{
+        color:#A70000;
+        font-size: 0.8rem;
+    }
+
+  
+    .top #pre{
+        width: 100%;
+        height: 350px;
+        border-bottom: 1px solid #999;
+        padding: 10px 20px;
+        margin-bottom: 100px;
+    }
+    .top #pre .btm{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .top #pre .btm .scope{
+        width: 20%;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+
+    }
+    .top #pre .btm .rev{
+        margin:0 auto;
+        width: 100%;
+        height: 158px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .top #pre .btm .revwarp{
+        width: 95%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        overflow: hidden;
+    }
+    .bottom #content .con1{
+        width: 100%;
+        line-height: 170%;
+        font-size: 0.9rem;
+    }
+    .bottom #content .con1 h3{
+        font-size: 1rem;
+        margin-bottom: 10px ;
+    }
+
+} 
+
+/* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/ 
+@media all and (min-width:480px) and (max-width:767px) {
+    main{
+        width: calc(100% - 40px);
+        margin:0 auto;
+        position: relative;
+        top: 100px;
+        z-index: 10;
+    }
+    .top #info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    
+    .top #info .left{
+        width: 100%;
+        padding: 0;
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .top #info .left .mainimg{
+        max-width: 380px;
+        width:100%;
+        height:400px;
+        background-color: #fff;
+        position: relative;
+        margin: 50px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .top #info .left .imgbox{
+        width:380px;
+        display: flex;
+    }
+    .top #info .left .imgbox figure img{
+        max-width: 90px;
+    }
+
+    
+
+    .top #info .right{
+        width: 100%;
+        padding: 20px;
+        padding-bottom: 2%;
+    }
+    .top #info .right .title p{
+        color:#6b6b6b;
+        font-weight: 500;
+        margin-left: 1%;
+        margin-bottom: 5px;
+        font-size: 0.9rem;
+    }
+    .top #info .right .title{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .top #info .right .title h3{
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 160%;
+        margin-left: 1%;
+    }
+    .top #info .right span{
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #999;
+        margin: 10px 0;
+    }
+    .top #info .right .title .star figure img{
+        width: 12px;
+    }
+    .top #info .right .title .star figure{
+        margin-right:4px;
+        margin-bottom: 7px;
+    }
+    .top #info .right .title .star p{
+        color:#6b6b6b;
+        font-size: 0.85rem;
+    }
+    .top #info .right .con .con1{
+        line-height: 180%;
+        margin-bottom: 20px;
+        font-size: 0.85rem;
+    }
+    .top #info .right .con ul li{
+        list-style: disc;
+        margin-left: 5px;
+        margin-bottom: 8px;
+        font-size: 0.85rem;
+    }
+    .top #info .right .con .price>p{
+        font-size: 1.8rem;
+        color:#A70000;
+        font-weight: 800;
+    }
+    .top #info .right .pur .total{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+    }
+    .top #info .right .pur .box{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        font-size: 1rem;
+    }
+    .top #info .right .pur .vol{
+        width: 27%;
+        height: 50px;
+        border:1px solid #999;
+        padding: 0 2%;
+    } 
+    .top #info .right .pur .vol ul{
+        display: flex;
+        justify-content: space-between;
+        line-height: 50px;
+        font-size: 1rem;
+    }
+    .top #info .right .pur .addcart{
+        width: 55%;
+        height: 50px;
+        border: 1px solid #999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .top #info .right .pur .heart{
+        position: relative;
+        width: 16%;
+        height: 50px;
+        border: 1px solid #999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .top #info .right .pur .heart figure img{
+        max-width: 20px;
+    }
+     .top #info .right .pur .note ul{
+        color:#A70000;
+        font-size: 0.8rem;
+    }
+
+  
+    .top #pre{
+        width: 100%;
+        height: 350px;
+        border-bottom: 1px solid #999;
+        padding: 10px 0;
+        margin-bottom: 100px;
+    }
+    .top #pre .head{
+        display: flex;
+        justify-content: space-between;
+        font-weight: 600;
+        margin-bottom: 10px;
+        margin-top: 5px;
+        font-size: 0.8rem;
+    }
+    .top #pre .btm{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .top #pre .btm .scope{
+        width: 40%;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+
+    }
+    .top #pre .btm .rev{
+        margin:0 auto;
+        width: 100%;
+        height: 158px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .top #pre .btm .revwarp{
+        width: 90%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        overflow: hidden;
+    }
+    .top #pre .btm .rev .rev_con .revbox figure img{
+        max-width: 80px;
+    }
+
+    .bottom #button{
+        width: 100%;
+        height: 30px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #999;
+        font-weight: 600;
+        color:#bababa;
+        font-size: 0.9rem;
+        cursor: pointer;
+    }
+    .bottom #content .con1{
+        width: 100%;
+        line-height: 170%;
+        font-size: 0.85rem;
+    }
+    .bottom #content .con1 h3{
+        font-size: 0.9rem;
+        margin-bottom: 10px ;
+    }
+
+} 
+
+/* 모바일 세로 (해상도 ~ 479px)*/ 
+@media all and (max-width:479px) {
+    main{
+        width: calc(100% - 40px);
+        margin:0 auto;
+        position: relative;
+        z-index: 10;
+    }
+    .top #info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    
+    .top #info .left{
+        width: 100%;
+        padding: 0;
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .top #info .left .mainimg{
+        max-width: 300px;
+        width:100%;
+        height:400px;
+        background-color: #fff;
+        position: relative;
+        margin: 50px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .top #info .left .imgbox{
+        width:300px;
+        display: flex;
+    }
+    .top #info .left .imgbox figure img{
+        max-width: 65px;
+    }
+
+    
+
+    .top #info .right{
+        width: 100%;
+        padding: 0px;
+        padding-bottom: 2%;
+    }
+    .top #info .right .title p{
+        color:#6b6b6b;
+        font-weight: 500;
+        margin-left: 1%;
+        margin-bottom: 5px;
+        font-size: 0.9rem;
+    }
+    .top #info .right .title{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .top #info .right .title h3{
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 160%;
+        margin-left: 1%;
+    }
+    .top #info .right span{
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #999;
+        margin: 10px 0;
+    }
+    .top #info .right .title .star figure img{
+        width: 12px;
+    }
+    .top #info .right .title .star figure{
+        margin-right:4px;
+        margin-bottom: 7px;
+    }
+    .top #info .right .title .star p{
+        color:#6b6b6b;
+        font-size: 0.85rem;
+    }
+    .top #info .right .con .con1{
+        line-height: 180%;
+        margin-bottom: 20px;
+        font-size: 0.85rem;
+    }
+    .top #info .right .con ul li{
+        list-style: disc;
+        margin-left: 5px;
+        margin-bottom: 8px;
+        font-size: 0.8rem;
+    }
+    .top #info .right .con .price>p{
+        font-size: 1.6rem;
+        color:#A70000;
+        font-weight: 800;
+    }
+    .top #info .right .pur .total{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+    }
+    .top #info .right .pur .box{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        font-size: 1rem;
+    }
+    .top #info .right .pur .vol{
+        width: 27%;
+        height: 40px;
+        border:1px solid #999;
+        padding: 0 2%;
+    } 
+    .top #info .right .pur .vol ul{
+        display: flex;
+        justify-content: space-between;
+        line-height: 40px;
+        font-size: 1rem;
+    }
+    .top #info .right .pur .addcart{
+        width: 55%;
+        height: 40px;
+        border: 1px solid #999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .top #info .right .pur .heart{
+        position: relative;
+        width: 16%;
+        height: 40px;
+        border: 1px solid #999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .top #info .right .pur .heart figure img{
+        max-width: 20px;
+    }
+     .top #info .right .pur .note ul{
+        color:#A70000;
+        font-size: 0.8rem;
+    }
+
+    .top #rank{
+        font-size: 0.7rem;
+        height: 210px;
+    }
+    .top #rank .right ul li span{
+        font-weight: 600;
+        margin-right: 8px;
+    }
+
+  
+    .top #pre{
+        width: 100%;
+        height: 180px;
+        border-bottom: 1px solid #999;
+        padding: 15px 0px;
+        margin-bottom: 50px;
+    }
+    .top #pre .head{
+        display: flex;
+        justify-content: space-between;
+        font-weight: 600;
+        margin-bottom: 10px;
+        margin-top: 5px;
+        font-size: 0.8rem;
+    }
+    .top #pre .btm{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .top #pre .btm .scope{
+        width: 50%;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .top #pre .btm .scope h3{
+        font-size: 2rem;
+        font-weight: 800;
+        margin: 10px 0;
+    }
+    .top #pre .btm .rev{
+        display: none;
+    }
+    .top #pre .btm .scope .star figure{
+        margin-right: 5px;
+    }
+    .top #pre .btm .scope .star figure img{
+        width: 12px;
+    }
+    .top #pre .btm .scope p{
+        font-size: 0.8rem;
+    }
+    .top #pre .btm .revwarp{
+        width: 95%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        overflow: hidden;
+    }
+
+
+    .bottom #button{
+        width: 100%;
+        height: 30px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #999;
+        font-weight: 600;
+        color:#bababa;
+        font-size: 0.9rem;
+        cursor: pointer;
+    }
+    .bottom #content .con1{
+        width: 100%;
+        line-height: 170%;
+        padding:0;
+        font-size: 0.85rem;
+    }
+    .bottom #content .con1 h3{
+        font-size: 0.9rem;
+        margin-bottom: 10px ;
+    }
+
+    .bottom{
+        width: 100%;
+        height: 1500px;
+        position: relative;
+    }
+
+}
+
